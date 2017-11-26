@@ -20,5 +20,13 @@ html
             .catalog.catalog--snippet
               |
               include ./includes/catalog-item.pug
+              |
+        section.popular.popular__manufacturers
+          h3.popular__title Популярные производители:
+          a.btn.btn--red.btn--big(href="./catalog.html") Все производители
+          |
+          include ./includes/brands.pug
+          |
+      include ./includes/section-services
               
     script(src='scripts/main.js')
