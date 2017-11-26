@@ -1,0 +1,46 @@
+section.services
+  .container
+    .services__header
+      h3.services__title Сервисы
+      |
+      p.services__paragraph
+        | Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+    |
+    .services-slider
+      input#services-slide-btn-1(type="radio", name="services-toggle", checked="")
+      |
+      input#services-slide-btn-2(type="radio", name="services-toggle")
+      |
+      input#services-slide-btn-3(type="radio", name="services-toggle")
+      |
+      .services-slider__control
+        label(for="services-slide-btn-1") Доставка
+        |             
+        label(for="services-slide-btn-2") Гарантия
+        |             
+        label(for="services-slide-btn-3") Кредит
+      |
+      .service-slide
+        .service-slide__wrap
+          .service-slide-item
+            span.service-slide-item__title Доставка
+            |
+            p.service-slide-item__descr
+              | Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              br
+              | Ведь мы неплохо заработаем,
+              br
+              | поднимая его на ваш этаж!
+          |
+          .service-slide-item
+            span.service-slide-item__title Гарантия
+            |
+            p.service-slide-item__descr
+              | Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+          |
+          .service-slide-item
+            span.service-slide-item__title Кредит
+            |
+            p.service-slide-item__descr Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+            |
+            a.btn.btn--red(href="#") Отправить заявку
