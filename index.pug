@@ -12,4 +12,13 @@ html
         |
         include ./includes/section-promo.pug
         |
+        section.popular.popular__goods
+          .popular__wrap
+            h3.popular__title Популярные товары:
+            a.btn.btn--red.btn--big(href="./catalog.html") Все популярные товары
+            |
+            .catalog.catalog--snippet
+              |
+              include ./includes/catalog-item.pug
+              
     script(src='scripts/main.js')
