@@ -1,0 +1,55 @@
+section.promo
+  .promo-items
+    .promo-items__wrap
+      .promo-item.promo-item--materials.label-new
+        h2.promo-item__title Материалы
+        |
+        a.btn(href="#") На любой вкус
+      |
+      .promo-item.promo-item--instrument
+        h2.promo-item__title Инструмент
+        |
+        a.btn(href="./catalog.html") На все случаи
+      |
+      .promo-item.promo-item--technics
+        h2.promo-item__title Техника
+        |
+        a.btn(href="#") Для стройки
+    |
+    .promo-items__wrap
+      .promo-items__wrap.promo-items__wrap--inner
+        .promo-item.promo-item--discounts
+          h2.promo-item__title Скидки 50%
+          |
+          a.btn(href="#") На 350 товаров
+        |
+        .promo-item.promo-item--delivery
+          h2.promo-item__title Доставка
+          |
+          a.btn(href="#") Бесплатно
+      |
+      .promo-slider
+        input#promo-slide-btn-1(type="radio", name="promo-toggle", checked="")
+        |
+        input#promo-slide-btn-2(type="radio", name="promo-toggle")
+        |
+        .promo-slider__control
+          label(for="promo-slide-btn-1") Слайд 1
+          |
+          label(for="promo-slide-btn-2") Слайд 2
+        |
+        .promo-slide
+          .promo-slide__wrap
+            .promo-slide-item
+              span.promo-slide-item__title Перфораторы
+              |
+              span.promo-slide-item__slogan Настоящие мужские игрушки
+              |
+              a.btn.btn--red(href="./catalog.html") Открыть каталог
+            |
+            .promo-slide-item
+              span.promo-slide-item__title Дрели
+              |
+              span.promo-slide-item__slogan Соседям на радость!
+              |
+              a.btn.btn--red(href="./catalog.html") Открыть каталог
