@@ -6,3 +6,22 @@ html
   body
     |
     include ./includes/header.pug
+    |
+    main.page-content
+      .container
+        section.store
+          .breadcrumbs
+            a.breadcrumbs__link.breadcrumbs__link--home(href="./index.html") Главная
+            |
+            a.breadcrumbs__link(href="./catalog.html") Каталог
+            |
+            a.breadcrumbs__link(href="#") Инструмент
+            |
+            a.breadcrumbs__link.breadcrumbs__link--active(href="#") Перфораторы
+          |
+          .store__title
+            h3 Перфораторы
+          |
+          .store__wrap
+            |
+            
