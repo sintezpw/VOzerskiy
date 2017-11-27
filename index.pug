@@ -19,7 +19,12 @@ html
             |
             .catalog.catalog--snippet
               |
-              include ./includes/catalog-item.pug
+              include ./includes/mixin-catalog-item.pug
+              |
+              +catalog-item("Перфоратор Bosch BFG9000", "32500", "25500", "")
+              +catalog-item("Перфоратор Bosch BFG3000", "22500", "15500", "")
+              +catalog-item("Перфоратор Bosch BFG6000", "30500", "25500", "")
+              +catalog-item("Перфоратор Bosch BFG2000", "32500", "12500", "label-new")
               |
         section.popular.popular__manufacturers
           h3.popular__title Популярные производители:
