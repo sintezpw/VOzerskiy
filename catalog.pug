@@ -25,3 +25,47 @@ html
           .store__wrap
             |
             include ./includes/section-store-filters.pug
+            |
+            .catalog-section
+              .catalog-section__sorting
+                h6 Сортировка:
+                |
+                button.btn.btn--sort.btn--sort-active По цене
+                |
+                button.btn.btn--sort По типу
+                |
+                button.btn.btn--sort По функционалу
+                |
+                button.btn.btn--sort.btn--sort--up
+                |
+                button.btn.btn--sort.btn--sort--down
+                |
+              .catalog
+                |
+                include ./includes/mixin-catalog-item.pug
+                |
+                +catalog-item("Перфоратор Bosch BFG9000", "32500", "25500", "")
+                +catalog-item("Перфоратор Bosch BFG3000", "22500", "15500", "")
+                +catalog-item("Перфоратор Bosch BFG6000", "30500", "25500", "label-new")
+                +catalog-item("Перфоратор Bosch BFG2000", "32500", "12500", "")
+                +catalog-item("Перфоратор Bosch BFG9000", "32500", "25500", "label-new")
+                +catalog-item("Перфоратор Bosch BFG3000", "22500", "15500", "")
+                +catalog-item("Перфоратор Bosch BFG6000", "30500", "25500", "label-new")
+                +catalog-item("Перфоратор Bosch BFG9000", "32500", "25500", "")
+                +catalog-item("Перфоратор Bosch BFG3000", "22500", "15500", "")
+                |
+                .paginator
+                  ul.paginator-menu
+                    li.paginator-menu__item
+                      a.paginator-menu__link.paginator-menu__link--active(href="#") 1
+                    |
+                    li.paginator-menu__item
+                      a.paginator-menu__link(href="#") 2
+                    |
+                    li.paginator-menu__item
+                      a.paginator-menu__link(href="#") 3
+                    |
+                    li.paginator-menu__item
+                      a.paginator-menu__link.paginator-menu__link--next(href="#") Следующая
+                    |
+      
