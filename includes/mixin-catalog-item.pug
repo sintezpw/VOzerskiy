@@ -1,7 +1,7 @@
 mixin catalog-item(itemName, oldPrice, price, className)
   .catalog-item(class=className)
     |
-    img(src="http://placecage.com/180/160", alt=itemName, width="180", height="160")
+    img.catalog-item__image(src="http://placecage.com/180/160", alt=itemName, width="180", height="160")
     |
     .catalog-item__descr
       |
