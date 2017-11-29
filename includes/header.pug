@@ -1,7 +1,7 @@
 header.page-header
-  .top-line
+  .top-header
     .container
-      .top-line__top-menu-wrap
+      .top-header__menu-wrap
         .logo
           a.logo__link(href="./index.html")
             h1.logo__title Техномарт
@@ -12,13 +12,13 @@ header.page-header
             |               
             button.form-search__button Поиск:
         |
-        .top-line__bookmarks
-          a(href="#") Закладки: 0
+        .top-header__bookmarks
+          a.btn.btn--bookmarks(href="#") Закладки: 0
         |
-        .top-line__cart
-          a(href="#") Корзина: 0
+        .top-header__cart
+          a.btn.btn--cart(href="#") Корзина: 0
         |
-        a.top-line__btn.btn.btn--green(href="#") Оформить заказ
+        a.btn.btn--green(href="#") Оформить заказ
   |
   .container
     .info
@@ -31,7 +31,7 @@ header.page-header
         address.info__address
           | г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       |
-      .auth-block.active
+      .auth-block.auth-block--active
         a.btn.btn--profile.btn--profile-icon(href="#") Войти
         |
         a.btn.btn--profile(href="#") Регистрация
@@ -48,22 +48,22 @@ header.page-header
     nav.main-navigation
       ul.menu-list
         li.menu-list__item
-          a(href="./index.html") Главная
+          a.menu-list__link(href="./index.html") Главная
         |
         li.menu-list__item
-          a(href="#") Компания
+          a.menu-list__link(href="#") Компания
         |
         li.menu-list__item
-          a(href="./catalog.html") Каталог
+          a.menu-list__link(href="./catalog.html") Каталог
         |
         li.menu-list__item
-          a(href="#") Новости
+          a.menu-list__link(href="#") Новости
         |
         li.menu-list__item
-          a(href="./catalog.html") Спецпредложения
+          a.menu-list__link(href="./catalog.html") Спецпредложения
         |
         li.menu-list__item
-          a(href="#") Доставка
+          a.menu-list__link(href="#") Доставка
         |
         li.menu-list__item
-          a(href="#") Контакты
+          a.menu-list__link(href="#") Контакты
