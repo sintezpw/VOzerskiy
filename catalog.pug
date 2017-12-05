@@ -1,0 +1,79 @@
+doctype html
+html(lang="ru")
+  |
+  include ./includes/head.pug
+  |
+  body
+    |
+    include ./includes/header.pug
+    |
+    main.page-content
+      .container
+        section.store
+          .breadcrumbs
+            a.breadcrumbs__link.breadcrumbs__link--home(href="./index.html") Главная
+            |
+            a.breadcrumbs__link(href="./catalog.html") Каталог
+            |
+            a.breadcrumbs__link(href="#") Инструмент
+            |
+            a.breadcrumbs__link.breadcrumbs__link--active(href="#") Перфораторы
+          |
+          .store__title
+            h3 Перфораторы
+          |
+          .store__wrap
+            |
+            include ./includes/section-store-filters.pug
+            |
+            .catalog-section
+              .catalog-section__sorting
+                h6 Сортировка:
+                |
+                button.btn.btn--sort.btn--sort-active По цене
+                |
+                button.btn.btn--sort По типу
+                |
+                button.btn.btn--sort По функционалу
+                |
+                button.btn.btn--sort.btn--sort--up
+                |
+                button.btn.btn--sort.btn--sort--down
+                |
+              .catalog
+                |
+                include ./includes/mixin-catalog-item.pug
+                |
+                +catalog-item("Перфоратор Bosch BFG9000", "32500", "25500", "")
+                +catalog-item("Перфоратор Bosch BFG3000", "22500", "15500", "")
+                +catalog-item("Перфоратор Bosch BFG6000", "30500", "25500", "catalog-item--new")
+                +catalog-item("Перфоратор Bosch BFG2000", "32500", "12500", "")
+                +catalog-item("Перфоратор Bosch BFG9000", "32500", "25500", "catalog-item--new")
+                +catalog-item("Перфоратор Bosch BFG3000", "22500", "15500", "")
+                +catalog-item("Перфоратор Bosch BFG6000", "30500", "25500", "catalog-item--new")
+                +catalog-item("Перфоратор Bosch BFG9000", "32500", "25500", "")
+                +catalog-item("Перфоратор Bosch BFG3000", "22500", "15500", "")
+                |
+                .paginator
+                  ul.paginator-menu
+                    li.paginator-menu__item
+                      a.paginator-menu__link.paginator-menu__link--active(href="#") 1
+                    |
+                    li.paginator-menu__item
+                      a.paginator-menu__link(href="#") 2
+                    |
+                    li.paginator-menu__item
+                      a.paginator-menu__link(href="#") 3
+                    |
+                    li.paginator-menu__item
+                      a.paginator-menu__link.paginator-menu__link--next(href="#") Следующая
+                    |
+      include ./includes/article-perforator.pug
+      |
+    include ./includes/footer.pug
+    |
+    .hidden
+      |
+      include ./includes/modal-window-write.pug
+      
+    script(src='scripts/main.js')

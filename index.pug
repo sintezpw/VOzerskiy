@@ -1,14 +1,47 @@
 doctype html
-html
-  head
-    meta(charset='utf-8')
-    title
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width')
-
-    link(rel='stylesheet', href='styles/main.css')
+html(lang="ru")
+  |
+  include ./includes/head.pug
+  |
   body
-    h1 Я сделяль!
-    p Pug + Sass
+    |
+    include ./includes/header.pug
+    |
+    main.page-content
+      .container
+        |
+        include ./includes/section-promo.pug
+        |
+        section.popular.popular__goods
+          .popular__wrap
+            h3.popular__title Популярные товары:
+            a.btn.btn--red.btn--big(href="./catalog.html") Все популярные товары
+            |
+            .catalog.catalog--snippet
+              |
+              include ./includes/mixin-catalog-item.pug
+              |
+              +catalog-item("Перфоратор Bosch BFG9000", "32500", "25500", "")
+              +catalog-item("Перфоратор Bosch BFG3000", "22500", "15500", "")
+              +catalog-item("Перфоратор Bosch BFG6000", "30500", "25500", "")
+              +catalog-item("Перфоратор Bosch BFG2000", "32500", "12500", "catalog-item--new")
+              |
+        section.popular.popular__manufacturers
+          h3.popular__title Популярные производители:
+          a.btn.btn--red.btn--big(href="./catalog.html") Все производители
+          |
+          include ./includes/brands.pug
+          |
+      include ./includes/section-services
+      |
+      .container
+        |
+        include ./includes/section-contacts
+        |
+    include ./includes/footer.pug
+    |
+    .hidden
+      |
+      include ./includes/modal-window-write.pug
 
     script(src='scripts/main.js')

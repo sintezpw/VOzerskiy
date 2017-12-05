@@ -1,0 +1,15 @@
+mixin brand(brandName)
+  li.brands-list__item
+    a.brands-list__link(href="#")
+      img.brands-list__image(src="http://www.placecage.com/gif/200/80", alt=brandName, width="200", height="80")
+
+.brands
+  ul.brands-list
+    +brand("bosch")
+    +brand("makita")
+    +brand("dewalt")
+    +brand("interskol")
+    +brand("hitachi")
+    +brand("lg")
+    +brand("aeg")
+    +brand("metabo")

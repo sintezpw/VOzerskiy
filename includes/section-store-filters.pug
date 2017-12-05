@@ -1,0 +1,62 @@
+aside.filters
+  .filter__title
+    h6 Фильтр:
+  |
+  form.filter__form
+    fieldset.price-group
+      legend.price-group__title Цена:
+      |
+      .price-group__inputs-wrap
+        .nouislider-wrap
+          #nouislider.nouislider
+        |
+        input.price-group__input(type="range", min="0", max="90000", step="1", name="range")
+        |
+        input.price-group__input#nouislider-start(type="number", name="first-value", value="0")
+        |
+        span  – 
+        |
+        input.price-group__input#nouislider-end(type="number", name="second-value", value="30000")
+    |
+    fieldset.checkbox-group
+      legend.checkbox-group__title Производители:
+      |
+      .checkbox-group__item
+        input.checkbox-group__input#ch-1(type="checkbox", name="bosch", checked="")
+        |
+        label.checkbox-group__label(for="ch-1") Bosch
+      |
+      .checkbox-group__item
+        input.checkbox-group__input#ch-2(type="checkbox", name="interskol")
+        |
+        label.checkbox-group__label(for="ch-2") Интерскол
+      |
+      .checkbox-group__item
+        input.checkbox-group__input#ch-3(type="checkbox", name="makita", checked="")
+        |
+        label.checkbox-group__label(for="ch-3") Makita
+      |
+      .checkbox-group__item
+        input.checkbox-group__input#ch-4(type="checkbox", name="dewalt")
+        |
+        label.checkbox-group__label(for="ch-4") Dewalt
+      |
+      .checkbox-group__item
+        input.checkbox-group__input#ch-5(type="checkbox", name="hitachi")
+        |
+        label.checkbox-group__label(for="ch-5") Hitachi
+    |
+    fieldset.radio-group
+      legend.radio-group__title Питание:
+      |
+      .radio-group__item
+        input.radio-group__input#rd-1(type="radio", name="power", checked="")
+        |
+        label.radio-group__label(for="rd-1") Аккумуляторные
+      |
+      .radio-group__item
+        input.radio-group__input#rd-2(type="radio", name="power")
+        |
+        label.radio-group__label(for="rd-2") Сетевые
+    |
+    button.btn.btn--filter-submit(type="submit") Показать

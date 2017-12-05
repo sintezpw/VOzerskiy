@@ -1,0 +1,21 @@
+.modal-window
+  .write-us
+    button.btn.btn--close(type="button", name="button") Закрыть
+    |
+    form.write-us-form
+      .write-us-form__name
+        label(for="name") Ваше имя:
+        |
+        input#name(type="text", name="Имя", placeholder="Представьтесь, пожалуйста", size="30", required="")
+      |
+      .write-us-form__email
+        label(for="email") Ваш e-mail:
+        |
+        input#email(type="text", name="E-mail", placeholder="Для отправки ответа", size="30", required="")
+      |
+      .write-us-form__text-area
+        label(for="write") Текст письма:
+        |
+        textarea#write(name="textarea", rows="5", cols="50", placeholder="В свободной форме", required="")
+      |
+      input.write-us-form__input-submit.btn.btn--submit(type="submit")
